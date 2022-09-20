@@ -1,0 +1,54 @@
+.mainBackground {
+    -fx-background-image: url("../graphics/wood_texture_darker.png");
+    -fx-background-size: stretch;
+}
+
+.text-field {
+    -fx-text-fill: #ffffff;
+    /*-fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+    linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);*/
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+    -fx-cursor: text;
+    -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; /* 4 7 4 7 */
+}
+
+.card:hover {
+    -fx-effect: dropshadow(one-pass-box, rgba(37, 242, 255, 1), 30, 0, 0, 0);
+}
+
+.selectedCard {
+    -fx-effect: dropshadow(one-pass-box, rgb(100,160,100), 30, 0.9, 0, 0);
+}
+
+.waiting-room-resource:hover {
+    -fx-effect: dropshadow(one-pass-box, rgba(37, 242, 255, 1), 30, 0, 0, 0);
+}
+
+.button {
+    -fx-border-color: #21130b;
+    -fx-background-color: #cf855b;
+    -fx-text-fill: #ffffff;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(one-pass-box, rgba(37, 242, 255, 1), 30, 0, 0, 0);
+}
+
+.button:pressed {
+    -fx-background-color: #66361e;
+}
+
+/* market-arrow has to stay BELOW button declaration */
+.market-arrow {
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: transparent;
+    -fx-background-color: transparent;
+}
+
+.market-arrow:hover {
+    -fx-effect: dropshadow(one-pass-box, rgba(37, 242, 255, 1), 10, 1, 0, 0);
+}
